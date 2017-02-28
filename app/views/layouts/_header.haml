@@ -1,0 +1,22 @@
+.container-fluid
+  .header
+    .header__left
+      =link_to root_path do
+        %h1.header__title Training Battle
+      .header__bar
+    .header__right
+      %ul.nav.nav--login
+        -if current_user.nil?
+          %li
+            =link_to new_user_registration_path do
+              .btn.btn-default
+                Sign Up
+          %li
+            =link_to new_user_session_path do
+              .btn.btn-default
+                Log In
+        -else
+          %li
+            =link_to destroy_user_session_path, method: :delete do
+              .btn.btn-default
+                Log Out

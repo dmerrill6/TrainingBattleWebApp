@@ -1,0 +1,22 @@
+
+
+// overwrite default button
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  box-shadow: none;
+}
+
+.btn-default {
+  border: 1px solid $c-primary;
+  background-color: transparent;
+  color: $c-primary;
+  font-family: $font-family-bold;
+
+  &:hover {
+    color: $c-primary;
+    background-color: white;
+    border-color: white;
+  }
+}

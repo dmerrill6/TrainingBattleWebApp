@@ -4,9 +4,9 @@ class ExerciseSetsController < ApplicationController
     @exercise_set = ExerciseSet.new(exercise_set_params)
     respond_to do |format|
       if @exercise_set.save
-        format.html{ redirect_to exercises_users_path(), notice: "Set registered!"}
+        format.html{ redirect_to exercises_users_path(), notice: "#{@exercise_set.amount} reps registered!"}
       else
-        format.html{ redirect_to exercises_users_path(), notice: "Could not register set."}
+        format.html{ redirect_to exercises_users_path(), notice: "Could not register reps."}
       end
     end
   end

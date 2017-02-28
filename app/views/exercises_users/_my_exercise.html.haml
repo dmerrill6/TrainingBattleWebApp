@@ -10,7 +10,7 @@
     =form_for ExerciseSet.new do |f|
       =f.hidden_field :exercises_user_id, value: exercises_user.id
       =f.number_field :amount
-      =f.submit "Submit reps"
+      =f.submit "Submit reps", class: "btn btn-success"
 
 %h4
   ="#{reps_done} reps done"
