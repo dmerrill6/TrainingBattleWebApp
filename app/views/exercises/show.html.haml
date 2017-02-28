@@ -1,0 +1,6 @@
+%h2
+  =@exercise.name
+%ul
+  -@exercise.exercise_steps.each do |step|
+    %li=step.amount.to_s + " " + @exercise.step_plural_name
+=link_to "<< Back", exercises_path
