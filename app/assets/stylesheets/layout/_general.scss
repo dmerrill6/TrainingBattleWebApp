@@ -1,25 +1,53 @@
 
 
-.main-header{
-  background-color: rgb(80, 48, 112);
-  text-align: center;
-  padding: 10em;
-  min-height: 100em;
-  h1{
-    color: white;
+// Header
+// =============================================================================
+
+.header {
+  height: 100px;
+  padding: 16px 0;
+}
+
+.header__left,
+.header__right {
+
+  @media screen and (min-width: $screen-sm-min) {
+    float: left;
+    width: 50%;
   }
+}
+
+.header__left {
+
+}
+
+.header__right {
+
+
+}
+
+.header__title {
+  display: inline-block;
+  color: $c-text;
+}
+.header__bar {
+  display: inline-block;
+  width: 200px;
+  height: 6px;
+  margin-bottom: 5px;
+  background-color: $bgc-dark;
 }
 
 
 
 
 
-// footer
+// Footer
+// =============================================================================
 .footer {
   margin-top: 2em;
   padding-top: 1.2em;
   font-family: $font-family-bold;
-  color: $c-primary-light;
   text-align: center;
 
 }

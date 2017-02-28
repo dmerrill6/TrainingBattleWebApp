@@ -57,6 +57,8 @@ gem "bower-rails", "~> 0.11.0"
 
 gem "haml"
 
+gem "font-awesome-rails"
+
 # Angular
 gem 'angularjs-rails'
 gem 'angular-ui-bootstrap-rails'

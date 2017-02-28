@@ -1,18 +1,3 @@
-%h1 Training Battle
 
--if current_user.nil?
-  =link_to new_user_registration_path do
-    .btn.btn-success
-      Sign Up
-
-  =link_to new_user_session_path do
-    .btn.btn-default
-      Log In
-
--else
-  =link_to destroy_user_session_path, method: :delete do
-    .btn.btn-default
-      Log Out
-  %br
-
+.home-content
   =link_to "My Exercises", exercises_path

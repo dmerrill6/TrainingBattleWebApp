@@ -1,8 +1,9 @@
 
 
-$c-primary: #F34F57;
+$c-primary: #232323;
 $c-primary-light: #FED0D2;
-$c-seconday: #000;
+$c-secondary: #f4f1f0;
+$c-accent: orange;
 
 
 
@@ -12,11 +13,12 @@ $c-seconday: #000;
 // Basicos
 
 // color text
-$c-text: $c-seconday;
+$c-text: $c-primary;
 
 
-// Box style
-$bg-primary: $c-primary;
+// Backgrounds
+$bgc-primary: $c-secondary;
+$bgc-dark: $c-primary;
 
 $br-color: $c-primary-light;
 
