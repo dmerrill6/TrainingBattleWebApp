@@ -51,3 +51,24 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Bower, a javascript package manager
+gem "bower-rails", "~> 0.11.0"
+
+gem "haml"
+
+# Angular
+gem 'angularjs-rails'
+gem 'angular-ui-bootstrap-rails'
+gem 'angular_rails_csrf'
+
+gem 'devise'
+
+# Permissions
+gem 'cancancan'
+gem 'rolify'
+
+# Model serializer, easily transform models to json
+gem 'active_model_serializers', '~> 0.10.0'
+
+gem 'font-awesome-sass'

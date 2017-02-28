@@ -10,6 +10,28 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+
+ // Vendors (contains 3rd-party styles)
+ //@import "custom-bootstrap";
+ // @import "bootswatch/variables";
+ @import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+ @import "bootswatch-sass/paper/variables";
+ @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+ @import "bootswatch-sass/paper/bootswatch";
+ @import "bootstrap_and_overrides";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+
+ // Settings (global mixins, functions, helper selectors, etc.)
+ @import "settings/variables";
+ @import "settings/colors";
+
+ // Base (global and generic styles, such as resets, typography, etc.)
+ @import "global";
+ @import "typo";
+
+ // Layouts
+ @import "layout/general";
