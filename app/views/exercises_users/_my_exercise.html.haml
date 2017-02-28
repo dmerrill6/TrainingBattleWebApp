@@ -1,0 +1,24 @@
+-exercise = exercises_user.exercise
+-reps_done = exercises_user.exercise_reps_done
+.row
+  .col-sm-8
+    %h2
+      =exercise.name
+
+  .col-sm-4
+    %h5 Register reps
+    =form_for ExerciseSet.new do |f|
+      =f.hidden_field :exercises_user_id, value: exercises_user.id
+      =f.number_field :amount
+      =f.submit "Submit reps"
+
+%h4
+  ="#{reps_done} reps done"
+
+%h3 Achievements:
+
+-exercises_user.exercise.exercise_steps.each do |step|
+  %li
+    =step.amount.to_s + " " + exercise.step_plural_name
+    -if reps_done >= step.amount
+      %i.fa.fa-check{style: 'color:green'}

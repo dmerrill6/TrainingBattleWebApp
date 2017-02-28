@@ -1,6 +1,9 @@
 %h2
   =@exercise.name
+%h4
+  Available achievements:
 %ul
   -@exercise.exercise_steps.each do |step|
     %li=step.amount.to_s + " " + @exercise.step_plural_name
+=render partial: 'subscribe', locals: {exercise: @exercise}
 =link_to "<< Back", exercises_path
