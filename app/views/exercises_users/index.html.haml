@@ -1,0 +1,14 @@
+.row
+  .col-sm-8.col-sm-offset-2
+    %h1 My Exercises
+
+    -@exercises_users.each do |exercises_user|
+      =render partial: 'my_exercise', locals: {exercises_user: exercises_user}
+      %hr
+
+    -if @exercises_users.empty?
+      %h3 You havent subscribed to any exercise routine yet.
+      %p
+        Click
+        =link_to "here", exercises_path
+        to view available exercises

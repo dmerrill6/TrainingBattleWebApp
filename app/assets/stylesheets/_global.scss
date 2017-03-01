@@ -22,14 +22,20 @@ $font-family-base: opensans-regular, "Helvetica Neue", Helvetica, Arial, sans-se
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  height: 100%;
 }
 
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
+  height: 100%;
   color: $c-text;
-  background-color: $bg-primary;
+  background-color: $bgc-primary;
+
+  @media screen and (min-width: $screen-sm-min) {
+    border: 20px solid $c-primary;
+  }
 }
 
 // Reset fonts for relevant elements

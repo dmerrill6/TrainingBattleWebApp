@@ -14,20 +14,24 @@
  */
 
  // Vendors (contains 3rd-party styles)
- //@import "custom-bootstrap";
- // @import "bootswatch/variables";
- @import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
- @import "bootswatch-sass/paper/variables";
- @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
- @import "bootswatch-sass/paper/bootswatch";
+ @import "settings/colors";
+
+ @import "custom-bootstrap";
  @import "bootstrap_and_overrides";
- @import "font-awesome-sprockets";
+ // @import "font-awesome-sprockets";
  @import "font-awesome";
+
+
+// que son estas cosas'??
+ // @import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+ // @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+ @import "bootswatch-sass/superhero/variables";
+ @import "bootswatch-sass/superhero/bootswatch";
+
 
 
  // Settings (global mixins, functions, helper selectors, etc.)
  @import "settings/variables";
- @import "settings/colors";
 
  // Base (global and generic styles, such as resets, typography, etc.)
  @import "global";
@@ -35,3 +39,9 @@
 
  // Layouts
  @import "layout/general";
+
+
+ // Components
+ @import "blocks/buttons";
+ @import "blocks/home";
+ @import "blocks/nav";
