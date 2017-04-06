@@ -16,6 +16,8 @@
 #
 default: &default
   adapter: postgresql
+  username: postgres
+  password: esmagnifico
   port: 5432
   host: localhost
   # For details on connection pooling, see rails configuration guide
