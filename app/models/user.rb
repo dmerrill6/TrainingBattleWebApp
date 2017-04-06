@@ -6,5 +6,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_and_belongs_to_many :exercises
+  has_and_belongs_to_many :groups
   has_many :exercises_users
 end

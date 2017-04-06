@@ -1,0 +1,9 @@
+%h1 Groups
+%hr
+-@groups.each do |g|
+  %h2=g.name
+  =link_to "View details", group_path(g)
+  %hr
+%br
+=link_to "Create a Group", new_group_path, class: 'btn btn-default'
+=link_to "Home", root_path, class: 'btn btn-default'

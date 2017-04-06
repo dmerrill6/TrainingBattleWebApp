@@ -1,0 +1,18 @@
+%h1
+  Edit Group:
+  = "#{@group.name}"
+
+= render partial: 'form'
+
+%hr
+
+%h1 Exercises
+-@exercises.each do |exercise|
+  %h2=exercise.name
+  =link_to "View details", exercise_path(exercise)
+  =render partial: 'exercises/subscribe', locals: {exercise: exercise, group: @group}
+
+%br
+%br
+%br
+=link_to "<< Back", groups_path

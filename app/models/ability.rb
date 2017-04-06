@@ -9,6 +9,7 @@ class Ability
       end
       can [:create, :index], ExercisesUser, user_id: user.id
       can [:index, :show], Exercise
+      can [:manage], Group
       can [:create], ExerciseSet, exercises_user: {user_id: user.id}
     end
     # Define abilities for the passed in user here. For example:

@@ -4,8 +4,8 @@ class Exercise < ApplicationRecord
   has_and_belongs_to_many :users
   has_and_belongs_to_many :groups
 
-  def subscribed? current_group
-    users.include? current_group
+  def subscribed? current_user
+    users.include? current_user
   end
 
   def exercises_user user

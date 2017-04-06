@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :exercises
   resources :exercises_users, path: "my_exercises"
   resources :exercise_sets
+  resources :groups
 end
