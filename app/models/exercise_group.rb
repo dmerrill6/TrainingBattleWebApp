@@ -1,2 +1,0 @@
-class ExerciseGroup < ApplicationRecord
-end
