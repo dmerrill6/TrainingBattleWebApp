@@ -2,5 +2,5 @@
 -@exercises.each do |exercise|
   %h2=exercise.name
   =link_to "View details", exercise_path(exercise)
-  =render partial: 'subscribe', locals: {exercise: exercise}
+  -# =render partial: 'subscribe', locals: {exercise: exercise}
   %hr
