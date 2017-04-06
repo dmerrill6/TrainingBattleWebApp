@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
   resources :exercises
   resources :exercises_users, path: "my_exercises"
+  resources :exercises_groups
   resources :exercise_sets
   resources :groups
 end

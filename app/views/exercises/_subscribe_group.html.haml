@@ -1,7 +1,0 @@
--unless exercise.subscribed?(group)
-  =form_for ExercisesUser.new do |f|
-    =f.hidden_field :group_id, value: group.id
-    =f.hidden_field :exercise_id, value: exercise.id
-    =f.submit "Subscribe", class: "btn btn-success"
--else
-  You have already subscribed this routine.

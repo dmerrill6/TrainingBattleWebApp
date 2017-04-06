@@ -8,6 +8,7 @@ class Ability
         can :manage, :all
       end
       can [:create, :index], ExercisesUser, user_id: user.id
+      can [:create, :index], ExercisesGroup
       can [:index, :show], Exercise
       can [:manage], Group
       can [:create], ExerciseSet, exercises_user: {user_id: user.id}

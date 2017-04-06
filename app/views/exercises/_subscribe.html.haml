@@ -1,6 +1,6 @@
--unless exercise.subscribed?(current_user)
-  =form_for ExercisesUser.new do |f|
-    =f.hidden_field :user_id, value: current_user.id
+-unless exercise.subscribed?(group)
+  =form_for ExercisesGroup.new do |f|
+    =f.hidden_field :group_id, value: group.id
     =f.hidden_field :exercise_id, value: exercise.id
     =f.submit "Subscribe", class: "btn btn-success"
 -else
